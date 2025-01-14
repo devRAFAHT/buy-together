@@ -1,0 +1,28 @@
+spring:
+    application:
+        name: user-api
+
+    profiles:
+        active: test
+
+    jpa:
+        open-in-view: false
+
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: noreplybuytogether@gmail.com
+        password: palx smts toie gfeo
+        properties:
+            mail.smtp.auth: true
+            mail.smtp.starttls.enable: true
+
+server:
+    port: 0
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+    instance:
+        instance-id: ${spring.application.name}:${server.port}:${random.value}
