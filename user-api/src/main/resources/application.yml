@@ -11,8 +11,8 @@ spring:
     mail:
         host: smtp.gmail.com
         port: 587
-        username: noreplybuytogether@gmail.com
-        password: palx smts toie gfeo
+        username: ${EMAIL}
+        password: ${PASSWORD}
         properties:
             mail.smtp.auth: true
             mail.smtp.starttls.enable: true
